@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>String Methods</title>
+</head>
+<body>
+    <div class="container text-center">
+        <h1>STRING METHODS</h1>
+        <div class="string string_length my-4 bg-info-subtle p-4">
+            <h4>STRING LENGTH</h4>
+            <input type="text" id="length" placeholder="type here">
+            <button type="button" class="mb-3" id="lenbtn">Submit</button>
+            <p>The length of your Text is:</p>
+            <p id="strlen"></p>
+        </div>
+
+        <div class="string string_slice my-4 bg-info-subtle p-4">
+            <h4>STRING SLICE</h4>
+            <input type="text" id="slice" placeholder="type here">
+            <button type="button" class="mb-3" id="slibtn">Submit</button>
+            <p>The sliced Text is:</p>
+            <p id="strslice"></p>
+        </div>
+
+        <div class="string string_substring my-4 bg-info-subtle p-4">
+            <h4>STRING SUBSTRING</h4>
+            <input type="text" id="substring" placeholder="type here">
+            <button type="button" class="mb-3" id="sbstrbtn">Submit</button>
+            <p>Sub string is:</p>
+            <p id="sub_string"></p>
+        </div>
+        
+        <div class="string string_substr my-4 bg-info-subtle p-4">
+            <h4>STRING SUBSTR</h4>
+            <input type="text" id="substr" placeholder="type here">
+            <button type="button" class="mb-3" id="substrbtn">Submit</button>
+            <p>Substr is:</p>
+            <p id="sub_str"></p>
+        </div>
+
+        <div class="string string_replace my-4 bg-info-subtle p-4">
+            <h4>STRING REPLACE</h4>
+            <input type="text" id="replace" placeholder="type here">
+            <button type="button" class="mb-3" id="replacebtn">Submit</button>
+            <p>Replaced letter is:</p>
+            <p id="re-place"></p>
+        </div>
+
+        <div class="string string_replaceall my-4 bg-info-subtle p-4">
+            <h4>STRING REPLACE ALL</h4>
+            <input type="text" id="replaceall" placeholder="type here">
+            <button type="button" class="mb-3" id="replaceallbtn">Submit</button>
+            <p>Replaced letters is:</p>
+            <p id="re-placeall"></p>
+        </div>
+
+        <div class="string string_upper my-4 bg-info-subtle p-4">
+            <h4>STRING toUpperCase</h4>
+            <input type="text" id="uppercase" placeholder="type here">
+            <button type="button" class="mb-3" id="upperbtn">Submit</button>
+            <p>Uppercased word is:</p>
+            <p id="upper"></p>
+        </div>
+
+        <div class="string string_lower my-4 bg-info-subtle p-4">
+            <h4>STRING toLowerCase</h4>
+            <input type="text" id="lowercase" placeholder="type here">
+            <button type="button" class="mb-3" id="lowerbtn">Submit</button>
+            <p>Lowercased word is:</p>
+            <p id="lower"></p>
+        </div>
+
+        <div class="string string_concat my-4 bg-info-subtle p-4">
+            <h4>STRING CONCAT</h4>
+            <input type="text" id="concat" placeholder="type here">
+            <button type="button" class="mb-3" id="concatbtn">Submit</button>
+            <p>Lowercased word is:</p>
+            <p id="strconcat"></p>
+        </div>
+
+        <div class="string string_trim my-4 bg-info-subtle p-4">
+            <h4>STRING TRIM</h4>
+            <input type="text" id="trim" placeholder="type here">
+            <button type="button" class="mb-3" id="trimbtn">Submit</button>
+            <p>Trimmed word is:</p>
+            <p id="strtrim"></p>
+        </div>
+
+        <div class="string string_trimstart my-4 bg-info-subtle p-4">
+            <h4>STRING TRIM START</h4>
+            <input type="text" id="trim-s" placeholder="type here">
+            <button type="button" class="mb-3" id="trim-sbtn">Submit</button>
+            <p>Trim start word is:</p>
+            <p id="strtrim-s"></p>
+        </div>
+
+        <div class="string string_trimend my-4 bg-info-subtle p-4">
+            <h4>STRING TRIM END</h4>
+            <input type="text" id="trim-e" placeholder="type here">
+            <button type="button" class="mb-3" id="trim-ebtn">Submit</button>
+            <p>Trim end word is:</p>
+            <p id="strtrim-e"></p>
+        </div>
+
+        <div class="string string_padstart my-4 bg-info-subtle p-4">
+            <h4>STRING PAD START</h4>
+            <input type="text" id="pad-s" placeholder="any number here">
+            <button type="button" class="mb-3" id="pad-sbtn">Submit</button>
+            <p>Pad start number is:</p>
+            <p id="strpad-s"></p>
+        </div>
+
+        <div class="string string_padend my-4 bg-info-subtle p-4">
+            <h4>STRING PAD END</h4>
+            <input type="text" id="pad-e" placeholder="any number here">
+            <button type="button" class="mb-3" id="pad-ebtn">Submit</button>
+            <p>Pad end number is:</p>
+            <p id="strpad-e"></p>
+        </div>
+
+        <div class="string string_charAT my-4 bg-info-subtle p-4">
+            <h4>STRING charAt()</h4>
+            <input type="text" id="char" placeholder="type here">
+            <button type="button" class="mb-3" id="charbtn">Submit</button>
+            <p>charAT letter is:</p>
+            <p id="strchar"></p>
+        </div>
+
+        <div class="string string_split my-4 bg-info-subtle p-4">
+            <h4>STRING SPLIT</h4>
+            <input type="text" id="split" placeholder="type here">
+            <button type="button" class="mb-3" id="splitbtn">Submit</button>
+            <p>Splited letter is:</p>
+            <p id="strsplit"></p>
+        </div>
+    </div>
+
+   <script src="script.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
